@@ -37,5 +37,7 @@ public class MahasiswaDemo {
     }
 }
 
+Setelah perulangan selesai, idxMin menyimpan posisi mahasiswa dengan IPK terkecil di antara elemen yang belum terurut. Indeks ini kemudian digunakan untuk menukar listMhs[i] dengan listMhs[idxMin], sehingga mahasiswa ber-IPK terkecil berpindah ke posisi terdepan — dan data secara bertahap menjadi terurut ascending berdasarkan IPK.
+
 
 
