@@ -39,5 +39,17 @@ public class MahasiswaDemo {
 
 Setelah perulangan selesai, idxMin menyimpan posisi mahasiswa dengan IPK terkecil di antara elemen yang belum terurut. Indeks ini kemudian digunakan untuk menukar listMhs[i] dengan listMhs[idxMin], sehingga mahasiswa ber-IPK terkecil berpindah ke posisi terdepan — dan data secara bertahap menjadi terurut ascending berdasarkan IPK.
 
+void insertionSort(){
+    for (int i=1; i<=data.length-1; i++){
+        int temp = data[i];
+        int j = i-1;
+        while (j>=0 && data[j] < temp){  // ganti < agar descending
+            data[j+1] = data[j];
+            j--;
+        }
+        data[j+1] = temp;
+    }
+} 
+Perubahan hanya pada satu kondisi di while, yaitu ganti > menjadi <:
 
 
